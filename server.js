@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 // DIN STRIPE SECRET KEY
-const stripe = new Stripe(sk_test_51To22nJvSIpNlW173JhQmxiPb9F6fr9Tpx9rmx11OCdk5KqN0Ey4OdpmvebA8vGrzWAaecqyHUv8L9qRDAGnRIYE00gPLf5w7J);
+const stripe = new Stripe("sk_test_51To22nJvSIpNlW173JhQmxiPb9F6fr9Tpx9rmx11OCdk5KqN0Ey4OdpmvebA8vGrzWAaecqyHUv8L9qRDAGnRIYE00gPLf5w7J");
 
 // ROUTE FÖR CHECKOUT
 app.post("/create-checkout-session", async (req, res) => {
